@@ -13,7 +13,7 @@ A modern, interactive personal portfolio website showcasing research publication
 
 ## Live Site
 
-Will be hosted at: **https://Inspiring-Ming.github.io** (after deployment)
+🌐 **https://inspiring-ming.github.io/Ming-sGalaxyWorld/**
 
 ## Project Structure
 
@@ -32,15 +32,11 @@ personal-website/
 
 ## Deployment to GitHub Pages
 
-1. Create a new GitHub repository named `Inspiring-Ming.github.io`
-2. Push this code to the repository:
-   ```bash
-   git remote add origin https://github.com/Inspiring-Ming/Inspiring-Ming.github.io.git
-   git branch -M main
-   git push -u origin main
-   ```
-3. GitHub Pages will automatically deploy from the `main` branch
-4. Site will be live at `https://Inspiring-Ming.github.io`
+This site is deployed at: **https://inspiring-ming.github.io/Ming-sGalaxyWorld/**
+
+Repository: **https://github.com/Inspiring-Ming/Ming-sGalaxyWorld**
+
+GitHub Pages automatically deploys from the `main` branch.
 
 ## Customization
 
