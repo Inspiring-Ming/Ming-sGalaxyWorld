@@ -389,6 +389,21 @@ a:hover {
     box-shadow: var(--shadow-sm);
 }
 
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: var(--radius);
+    object-fit: cover;
+    box-shadow: var(--shadow-lg);
+    border: 2px solid var(--border);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
 .about-text p {
     margin-bottom: 1rem;
     color: var(--text-secondary);
