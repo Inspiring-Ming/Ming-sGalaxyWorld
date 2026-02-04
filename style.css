@@ -459,14 +459,18 @@ a:hover {
     object-fit: cover;
     box-shadow: var(--shadow-lg);
     border: 2px solid var(--border);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+    filter: brightness(1.2) contrast(1.1);
     image-rendering: -webkit-optimize-contrast;
     image-rendering: high-quality;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
 .profile-img:hover {
     transform: translateY(-2px);
     box-shadow: 0 10px 30px rgba(124, 58, 237, 0.3);
+    filter: brightness(1.25) contrast(1.12);
 }
 
 .about-text p {
