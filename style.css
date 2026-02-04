@@ -459,12 +459,16 @@ a:hover {
     object-fit: cover;
     box-shadow: var(--shadow-lg);
     border: 2px solid var(--border);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+    filter: brightness(1.1) contrast(1.05) saturate(1.1);
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
 }
 
 .profile-img:hover {
     transform: translateY(-2px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 10px 30px rgba(124, 58, 237, 0.3);
+    filter: brightness(1.15) contrast(1.08) saturate(1.15);
 }
 
 .about-text p {
