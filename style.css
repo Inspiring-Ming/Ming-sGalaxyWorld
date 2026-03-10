@@ -122,6 +122,22 @@ a:hover {
     font-weight: 700;
     color: var(--text-primary);
     letter-spacing: -0.5px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.nav-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--border);
+    transition: border-color var(--transition);
+}
+
+.nav-logo:hover .nav-avatar {
+    border-color: var(--accent);
 }
 
 .nav-logo .accent {
@@ -238,26 +254,6 @@ a:hover {
     max-width: var(--max-width);
 }
 
-.hero-intro {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2.5rem;
-    margin-bottom: 1.5rem;
-    opacity: 0;
-    animation: fadeUp 0.6s ease forwards 0.2s;
-}
-
-.hero-photo .profile-img {
-    width: 160px;
-    height: 160px;
-    flex-shrink: 0;
-}
-
-.hero-text {
-    text-align: left;
-}
-
 .hero-bio {
     font-size: 1rem;
     color: var(--text-secondary);
@@ -291,14 +287,18 @@ a:hover {
     letter-spacing: 2px;
     text-transform: uppercase;
     font-family: var(--font-mono);
+    opacity: 0;
+    animation: fadeUp 0.6s ease forwards 0.2s;
 }
 
 .hero-name {
-    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
     font-weight: 700;
     line-height: 1.1;
     margin-bottom: 1rem;
     letter-spacing: -1.5px;
+    opacity: 0;
+    animation: fadeUp 0.6s ease forwards 0.4s;
 }
 
 .hero-name .accent {
@@ -309,15 +309,21 @@ a:hover {
 }
 
 .hero-title {
-    font-size: 1.1rem;
+    font-size: 1.25rem;
     color: var(--text-secondary);
-    margin-bottom: 0.75rem;
+    margin-bottom: 1rem;
     font-weight: 400;
+    opacity: 0;
+    animation: fadeUp 0.6s ease forwards 0.6s;
 }
 
 .hero-tagline {
-    font-size: 0.95rem;
+    font-size: 1.05rem;
     color: var(--text-muted);
+    max-width: 600px;
+    margin: 0 auto 1.5rem;
+    opacity: 0;
+    animation: fadeUp 0.6s ease forwards 0.7s;
 }
 
 .hero-links {
@@ -1064,20 +1070,6 @@ footer p {
 
     .nav-links.open {
         display: flex;
-    }
-
-    .hero-intro {
-        flex-direction: column;
-        gap: 1.5rem;
-    }
-
-    .hero-text {
-        text-align: center;
-    }
-
-    .hero-photo .profile-img {
-        width: 130px;
-        height: 130px;
     }
 
     .hero-details {
