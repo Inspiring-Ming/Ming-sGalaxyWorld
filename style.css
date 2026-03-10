@@ -944,6 +944,30 @@ a:hover {
     color: var(--text-secondary);
 }
 
+.timeline-details {
+    list-style: none;
+    margin-top: 0.5rem;
+}
+
+.timeline-details li {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    padding: 0.2rem 0 0.2rem 1.2rem;
+    position: relative;
+    line-height: 1.6;
+}
+
+.timeline-details li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.65rem;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--accent);
+}
+
 /* ===== Skills ===== */
 .skills-grid {
     display: grid;
