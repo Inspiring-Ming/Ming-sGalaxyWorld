@@ -507,7 +507,11 @@ a:hover {
 
 /* ===== Sections ===== */
 .section {
-    padding: 6rem 0;
+    padding: 5rem 0;
+}
+
+#about {
+    padding-top: 3rem;
 }
 
 .section-alt {
