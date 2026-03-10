@@ -20,8 +20,8 @@
             </button>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
-                <li><a href="#publications">Publications</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#publications">Publications</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#blog">Blog</a></li>
@@ -88,8 +88,83 @@
         </div>
     </section>
 
+    <!-- Projects Section -->
+    <section id="projects" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+
+                <article class="project-card featured">
+                    <div class="project-label">Featured</div>
+                    <h3 class="project-name">ESG Knowledge Graph System</h3>
+                    <p class="project-desc">An ontology-driven ESG metric system built on SASB standards. Uses an RDF knowledge graph (525 triples) to map reporting frameworks, categories, metrics, and calculation models, then computes ESG metrics from real company data (422K+ records across 40+ companies).</p>
+                    <ul class="project-highlights">
+                        <li>4-service architecture: Knowledge Graph, Data Retrieval, Calculation, Report Generation</li>
+                        <li>7 competency questions (CQ1&ndash;CQ7) answered via SPARQL</li>
+                        <li>PDF and Word report generation with data lineage</li>
+                        <li>Covers Semiconductors (TC-SC) and Commercial Banking (FN-CB)</li>
+                    </ul>
+                    <div class="project-tech">
+                        <span>Python</span><span>Flask</span><span>RDFLib</span><span>SPARQL</span><span>Pandas</span><span>ReportLab</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://inspiring-ming.github.io/ESG-Metric-System/" target="_blank" rel="noopener">Project Page</a>
+                        <a href="https://github.com/Inspiring-Ming/ESG-Metric-System" target="_blank" rel="noopener">GitHub</a>
+                        <a href="https://esgalaxy.com.ngrok.dev" target="_blank" rel="noopener">Live Demo</a>
+                    </div>
+                </article>
+
+                <article class="project-card featured">
+                    <div class="project-label">Featured · KDD 2026</div>
+                    <h3 class="project-name">OntoMetric Framework</h3>
+                    <p class="project-desc">An ontology-driven LLM-assisted framework for automated ESG metric knowledge graph generation. Three-stage pipeline (Segmentation → Extraction → Validation) achieving 65–90% semantic accuracy across SASB, TCFD, IFRS S2, and AASB S2 frameworks with 48× cost reduction vs baseline.</p>
+                    <ul class="project-highlights">
+                        <li>Ontology-guided extraction: 5 entity types, 5 relationship types</li>
+                        <li>Two-phase validation: semantic type verification + rule-based schema checking</li>
+                        <li>Evaluated on 5 regulatory documents: 364 entities → 295 validated (81% retention)</li>
+                        <li>80%+ schema compliance, 63–90% relationship retention, full provenance tracking</li>
+                    </ul>
+                    <div class="project-tech">
+                        <span>Python</span><span>Claude Sonnet 4</span><span>RDF/OWL</span><span>SPARQL</span><span>PyPDF2</span><span>Data Engineering</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://inspiring-ming.github.io/OntoMetric/" target="_blank" rel="noopener">Project Page</a>
+                        <a href="https://github.com/Inspiring-Ming/OntoMetric" target="_blank" rel="noopener">GitHub</a>
+                        <a href="https://drive.google.com/file/d/1FwsMIAP5nPab4gmboj_oOvq8pmzK62aE/view?usp=sharing" target="_blank" rel="noopener">Paper</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <h3 class="project-name">FAIC Project P002</h3>
+                    <p class="project-desc">Led research at the Financial Artificial Intelligence Consortium (FAIC) investigating big data analytics and machine learning applications in fintech, with priority on ESG challenges. Collaborated with Cognitivo and Westpac.</p>
+                    <ul class="project-highlights">
+                        <li>Cross-disciplinary: agile processes, responsible investment, AI/ML</li>
+                        <li>Industry partnerships with financial institutions</li>
+                        <li>Supervised student research contributions</li>
+                    </ul>
+                    <div class="project-tech">
+                        <span>AI/ML</span><span>Big Data</span><span>Fintech</span><span>ESG</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://www.unsw.edu.au/research/faic/projects/main-projects/p002" target="_blank" rel="noopener">FAIC Project Page</a>
+                    </div>
+                </article>
+
+                <!-- Placeholder for more projects -->
+                <article class="project-card project-add">
+                    <h3 class="project-name">+ More Projects</h3>
+                    <p class="project-desc">Additional projects and contributions coming soon. Check back for updates or visit my GitHub profile.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/Inspiring-Ming" target="_blank" rel="noopener">GitHub Profile</a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
     <!-- Publications Section -->
-    <section id="publications" class="section section-alt">
+    <section id="publications" class="section">
         <div class="container">
             <h2 class="section-title">Publications</h2>
             <div class="publications-list">
@@ -144,80 +219,6 @@
                         <p class="pub-authors"><!-- Authors --></p>
                         <p class="pub-venue"><!-- Venue --></p>
                         <p class="pub-note" style="color: #7f8c8d; font-style: italic;">Additional publications available on <a href="https://scholar.google.com/citations?user=1nRQ9twAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a></p>
-                    </div>
-                </article>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="section">
-        <div class="container">
-            <h2 class="section-title">Projects</h2>
-            <div class="projects-grid">
-
-                <article class="project-card featured">
-                    <div class="project-label">Featured</div>
-                    <h3 class="project-name">ESG Knowledge Graph System</h3>
-                    <p class="project-desc">An ontology-driven ESG metric system built on SASB standards. Uses an RDF knowledge graph (525 triples) to map reporting frameworks, categories, metrics, and calculation models, then computes ESG metrics from real company data (422K+ records across 40+ companies).</p>
-                    <ul class="project-highlights">
-                        <li>4-service architecture: Knowledge Graph, Data Retrieval, Calculation, Report Generation</li>
-                        <li>7 competency questions (CQ1&ndash;CQ7) answered via SPARQL</li>
-                        <li>PDF and Word report generation with data lineage</li>
-                        <li>Covers Semiconductors (TC-SC) and Commercial Banking (FN-CB)</li>
-                    </ul>
-                    <div class="project-tech">
-                        <span>Python</span><span>Flask</span><span>RDFLib</span><span>SPARQL</span><span>Pandas</span><span>ReportLab</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/Inspiring-Ming/ESG-Metric-System" target="_blank" rel="noopener">GitHub</a>
-                        <a href="https://esgalaxy.com.ngrok.dev" target="_blank" rel="noopener">Live Demo</a>
-                    </div>
-                </article>
-
-                <article class="project-card featured">
-                    <div class="project-label">Featured · KDD 2026</div>
-                    <h3 class="project-name">OntoMetric Framework</h3>
-                    <p class="project-desc">An ontology-driven LLM-assisted framework for automated ESG metric knowledge graph generation. Three-stage pipeline (Segmentation → Extraction → Validation) achieving 65–90% semantic accuracy across SASB, TCFD, IFRS S2, and AASB S2 frameworks with 48× cost reduction vs baseline.</p>
-                    <ul class="project-highlights">
-                        <li>Ontology-guided extraction: 5 entity types, 5 relationship types</li>
-                        <li>Two-phase validation: semantic type verification + rule-based schema checking</li>
-                        <li>Evaluated on 5 regulatory documents: 364 entities → 295 validated (81% retention)</li>
-                        <li>80%+ schema compliance, 63–90% relationship retention, full provenance tracking</li>
-                    </ul>
-                    <div class="project-tech">
-                        <span>Python</span><span>Claude Sonnet 4</span><span>RDF/OWL</span><span>SPARQL</span><span>PyPDF2</span><span>Data Engineering</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://inspiring-ming.github.io/OntoMetric/" target="_blank" rel="noopener">Project Page</a>
-                        <a href="https://github.com/Inspiring-Ming/OntoMetric" target="_blank" rel="noopener">GitHub</a>
-                        <a href="https://drive.google.com/file/d/1FwsMIAP5nPab4gmboj_oOvq8pmzK62aE/view?usp=sharing" target="_blank" rel="noopener">Paper</a>
-                    </div>
-                </article>
-
-                <article class="project-card">
-                    <h3 class="project-name">FAIC Project P002</h3>
-                    <p class="project-desc">Led research at the Financial Artificial Intelligence Consortium (FAIC) investigating big data analytics and machine learning applications in fintech, with priority on ESG challenges. Collaborated with Cognitivo and Westpac.</p>
-                    <ul class="project-highlights">
-                        <li>Cross-disciplinary: agile processes, responsible investment, AI/ML</li>
-                        <li>Industry partnerships with financial institutions</li>
-                        <li>Supervised student research contributions</li>
-                    </ul>
-                    <div class="project-tech">
-                        <span>AI/ML</span><span>Big Data</span><span>Fintech</span><span>ESG</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://www.unsw.edu.au/research/faic/projects/main-projects/p002" target="_blank" rel="noopener">FAIC Project Page</a>
-                    </div>
-                </article>
-
-                <!-- Placeholder for more projects -->
-                <article class="project-card project-add">
-                    <h3 class="project-name">+ More Projects</h3>
-                    <p class="project-desc">Additional projects and contributions coming soon. Check back for updates or visit my GitHub profile.</p>
-                    <div class="project-links">
-                        <a href="https://github.com/Inspiring-Ming" target="_blank" rel="noopener">GitHub Profile</a>
                     </div>
                 </article>
 
