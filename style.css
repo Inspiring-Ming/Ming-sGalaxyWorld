@@ -284,15 +284,70 @@ a:hover {
     background-clip: text;
 }
 
+/* Rotating role line */
+.hero-role {
+    font-size: clamp(1.4rem, 3.5vw, 2.1rem);
+    font-weight: 700;
+    margin-bottom: 1.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+    opacity: 0;
+    animation: fadeUp 0.6s ease forwards 0.5s;
+}
+
+.hero-role-static {
+    color: var(--text-primary);
+}
+
+.hero-role-rotate {
+    position: relative;
+    display: inline-block;
+    height: 1.4em;
+    overflow: hidden;
+    text-align: left;
+}
+
+.hero-role-rotate span {
+    display: block;
+    height: 1.4em;
+    line-height: 1.4em;
+    white-space: nowrap;
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--accent) 0%, var(--accent-secondary) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: roleRotate 9s cubic-bezier(0.65, 0, 0.35, 1) infinite;
+}
+
+@keyframes roleRotate {
+    0%, 18%   { transform: translateY(0); }
+    25%, 43%  { transform: translateY(-1.4em); }
+    50%, 68%  { transform: translateY(-2.8em); }
+    75%, 93%  { transform: translateY(-4.2em); }
+    100%      { transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .hero-role-rotate span { animation: none; }
+}
+
 .hero-subtitle {
-    font-size: 1.25rem;
+    font-size: 1.15rem;
     color: var(--text-secondary);
-    max-width: 550px;
+    max-width: 580px;
     margin: 0 auto 2.5rem;
-    line-height: 1.6;
+    line-height: 1.7;
     font-weight: 400;
     opacity: 0;
-    animation: fadeUp 0.6s ease forwards 0.6s;
+    animation: fadeUp 0.6s ease forwards 0.7s;
+}
+
+.hero-subtitle strong {
+    color: var(--text-primary);
+    font-weight: 600;
 }
 
 .hero-links {
