@@ -142,16 +142,17 @@
             <div class="projects-grid">
 
                 <article class="project-card featured">
-                    <div class="project-label">Featured</div>
+                    <div class="project-label">Featured · Data Science & Analytics</div>
                     <h3 class="project-name">ESG Landscape Explorer</h3>
-                    <p class="project-desc">An interactive dashboard turning 5.7M raw ESG observations into an analysis-ready 57,771-company × 95-metric matrix, then applying PCA, K-Means clustering, and industry profiling. Includes an in-app SQL query console over a SQLite build of the curated tables.</p>
+                    <p class="project-desc">An interactive ESG analytics application that transforms <strong>5.7M raw observations</strong> into an analysis-ready dataset covering <strong>57,771 companies and 95 ESG metrics</strong>. Applies PCA, K-Means clustering, industry profiling, and SQL-based exploration to uncover patterns across companies and industries.</p>
                     <ul class="project-highlights">
-                        <li>PCA on 95 ESG metrics (PC1 explains 17.5% of variance); z-scored industry heatmaps</li>
-                        <li>K-Means archetypes in PCA space + reported-vs-estimated disclosure analysis</li>
-                        <li>Read-only SQL console, password-gated, deployed on Hugging Face Spaces</li>
+                        <li>Applied PCA across 95 ESG metrics, with PC1 explaining 17.5% of variance, alongside z-score-based industry profiling.</li>
+                        <li>Built K-Means company archetypes in PCA space and analysed reported vs. estimated ESG disclosures.</li>
+                        <li>Developed an interactive dashboard with visual analytics and a read-only SQL console over curated SQLite tables.</li>
+                        <li>Deployed as a live application on Hugging Face Spaces.</li>
                     </ul>
                     <div class="project-tech">
-                        <span>Python</span><span>scikit-learn</span><span>PCA / K-Means</span><span>SQLite</span><span>Streamlit</span><span>Plotly</span>
+                        <span>Python</span><span>scikit-learn</span><span>Pandas</span><span>PCA</span><span>K-Means</span><span>SQLite</span><span>Streamlit</span><span>Plotly</span>
                     </div>
                     <div class="project-links">
                         <a href="https://inspiring-ming-esg-landscape-explorer.hf.space/" target="_blank" rel="noopener">Live App</a>
@@ -160,17 +161,18 @@
                 </article>
 
                 <article class="project-card featured">
-                    <div class="project-label">Featured</div>
+                    <div class="project-label">Featured · Knowledge Graphs & Software Architecture</div>
                     <h3 class="project-name">ESG Knowledge Graph System</h3>
-                    <p class="project-desc">An ontology-driven ESG metric system built on SASB standards. Uses an RDF knowledge graph (525 triples) to map reporting frameworks, categories, metrics, and calculation models, then computes ESG metrics from real company data (422K+ records across 40+ companies).</p>
+                    <p class="project-desc">An ontology-driven system for ESG metric management, computation, and reporting. Uses an RDF knowledge graph to connect reporting frameworks, categories, metrics, calculation models, and company data, supporting automated metric computation with traceable data lineage.</p>
                     <ul class="project-highlights">
-                        <li>4-service architecture: Knowledge Graph, Data Retrieval, Calculation, Report Generation</li>
-                        <li>7 competency questions (CQ1&ndash;CQ7) answered via SPARQL</li>
-                        <li>PDF and Word report generation with data lineage</li>
-                        <li>Covers Semiconductors (TC-SC) and Commercial Banking (FN-CB)</li>
+                        <li>Designed a four-service architecture covering knowledge graph management, data retrieval, metric calculation, and report generation.</li>
+                        <li>Modelled ESG knowledge using RDF/OWL and implemented seven competency questions (CQ1&ndash;CQ7) with SPARQL.</li>
+                        <li>Integrated <strong>422K+ records across 40+ companies</strong> for ESG metric computation and analysis.</li>
+                        <li>Generated PDF and Word reports with traceable metric calculations and data lineage.</li>
+                        <li>Implemented use cases for the Semiconductors (TC-SC) and Commercial Banking (FN-CB) industries.</li>
                     </ul>
                     <div class="project-tech">
-                        <span>Python</span><span>Flask</span><span>RDFLib</span><span>SPARQL</span><span>Pandas</span><span>ReportLab</span>
+                        <span>Python</span><span>Flask</span><span>RDFLib</span><span>RDF/OWL</span><span>SPARQL</span><span>Pandas</span><span>REST APIs</span><span>ReportLab</span>
                     </div>
                     <div class="project-links">
                         <a href="https://inspiring-ming.github.io/ESG-Metric-System/" target="_blank" rel="noopener">Project Page</a>
@@ -180,17 +182,18 @@
                 </article>
 
                 <article class="project-card featured">
-                    <div class="project-label">Featured · Under Review</div>
-                    <h3 class="project-name">OntoMetric Framework</h3>
-                    <p class="project-desc">An ontology-driven LLM-assisted framework for automated ESG metric knowledge graph generation. Three-stage pipeline (Segmentation → Extraction → Validation) achieving 65–90% semantic accuracy across SASB, TCFD, IFRS S2, and AASB S2 frameworks with 48× cost reduction vs baseline.</p>
+                    <div class="project-label">Featured · LLMs & Knowledge Graphs · Under Review</div>
+                    <h3 class="project-name">OntoMetric</h3>
+                    <p class="project-desc">An ontology-guided LLM framework that transforms ESG and sustainability standards into structured knowledge graphs through a three-stage <strong>segmentation, extraction, and validation</strong> pipeline.</p>
                     <ul class="project-highlights">
-                        <li>Ontology-guided extraction: 5 entity types, 5 relationship types</li>
-                        <li>Two-phase validation: semantic type verification + rule-based schema checking</li>
-                        <li>Evaluated on 5 regulatory documents: 364 entities → 295 validated (81% retention)</li>
-                        <li>80%+ schema compliance, 63–90% relationship retention, full provenance tracking</li>
+                        <li>Designed ontology-guided LLM extraction across five entity types and five relationship types.</li>
+                        <li>Implemented semantic type verification and rule-based schema validation with provenance tracking.</li>
+                        <li>Evaluated across SASB, TCFD, IFRS S2, and AASB S2 documents, achieving <strong>65&ndash;90% semantic accuracy</strong> and <strong>80%+ schema compliance</strong>.</li>
+                        <li>Validated 295 of 364 extracted entities (81% retention), with 63&ndash;90% relationship retention.</li>
+                        <li>Reduced LLM processing cost by <strong>48&times; compared with the baseline approach</strong>.</li>
                     </ul>
                     <div class="project-tech">
-                        <span>Python</span><span>Claude Sonnet 4</span><span>RDF/OWL</span><span>SPARQL</span><span>PyPDF2</span><span>Data Engineering</span>
+                        <span>Python</span><span>LLMs</span><span>Claude Sonnet</span><span>RDF/OWL</span><span>SPARQL</span><span>PyPDF2</span><span>Knowledge Graphs</span>
                     </div>
                     <div class="project-links">
                         <a href="https://inspiring-ming.github.io/OntoMetric/" target="_blank" rel="noopener">Project Page</a>
@@ -200,15 +203,17 @@
                 </article>
 
                 <article class="project-card">
-                    <h3 class="project-name">IMDb Sentiment (Deep Learning)</h3>
-                    <p class="project-desc">An end-to-end deep-learning sentiment classifier for movie reviews: Word2Vec embeddings trained from scratch feed a neural network, selected by an architecture bake-off over leakage-free train/val/test splits. Packaged with a live, interactive demo.</p>
+                    <div class="project-label">Deep Learning & NLP</div>
+                    <h3 class="project-name">IMDb Sentiment Analysis</h3>
+                    <p class="project-desc">An end-to-end deep-learning NLP application for classifying sentiment in movie reviews. Uses custom-trained Word2Vec embeddings with a neural network classifier, model comparison, evaluation, and live deployment.</p>
                     <ul class="project-highlights">
-                        <li>83.8% test accuracy (0.84 F1) on 50K IMDb reviews</li>
-                        <li>Architecture bake-off: GlobalAvgPool beat Flatten-MLP and LSTM</li>
-                        <li>Containerised with Docker and deployed as a live demo</li>
+                        <li>Achieved <strong>83.8% test accuracy and 0.84 F1</strong> on 50K IMDb reviews.</li>
+                        <li>Trained Word2Vec embeddings from scratch and compared Global Average Pooling, Flatten-MLP, and LSTM architectures.</li>
+                        <li>Used leakage-free training, validation, and test splits for model selection and final evaluation.</li>
+                        <li>Containerised the application with Docker and deployed it as an interactive live demo.</li>
                     </ul>
                     <div class="project-tech">
-                        <span>TensorFlow / Keras</span><span>Word2Vec</span><span>NLP</span><span>Docker</span>
+                        <span>Python</span><span>TensorFlow / Keras</span><span>Word2Vec</span><span>NLP</span><span>Docker</span>
                     </div>
                     <div class="project-links">
                         <a href="https://huggingface.co/spaces/Inspiring-Ming/imdb-sentiment-dl" target="_blank" rel="noopener">Live Demo</a>
